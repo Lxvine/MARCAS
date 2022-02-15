@@ -1,0 +1,250 @@
+html{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 2300px;
+}
+
+/* LAYOUT */
+.contenedor1{
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+}
+/* GENERAL */ 
+section{
+    margin-left: 2%;
+}
+
+.clear{
+    clear: both;
+}
+
+
+/* ASIDE */
+
+#profilepic img{
+    border-radius: 50%;
+    width: 350px;
+    margin: auto;
+}
+
+aside {
+    background-color: rgb(31, 31, 31);
+    flex-basis: 18%;
+    box-sizing: border-box;
+}
+
+aside * {
+    color: white;
+}
+
+aside h2{
+    letter-spacing: 5px;
+}
+
+aside section h2:first-child {
+    border-bottom: 2px solid white;
+}
+
+aside h4{
+    color: rgb(114, 114, 114);
+}
+
+dl{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+dt, dd {
+    line-height: 1.5em;
+    border-top: 1px solid rgb(114, 114, 114);
+    flex-basis: 40%;
+    margin: 0;
+}
+
+dt{
+    font-weight: bolder;
+    clear: left;
+    width:30%;
+    float:left; 
+    flex-grow: row;
+}
+
+dd{
+    clear: right;
+    width: 60%;
+    float: left;
+    margin: 0;
+}
+
+dt:last-of-type,
+dd:last-of-type {
+    border-bottom: 1px solid rgb(114, 114, 114);
+}
+
+/* MAIN */
+main {
+    width: 60%;
+    box-sizing: border-box;
+}
+
+h1, h2{
+    text-transform: uppercase;
+}
+
+
+main section h2{
+    letter-spacing: 5px;
+}
+
+.principal{
+    background-color: rgb(31, 31, 31);
+    padding: 15% 0;
+    text-align: center;
+}
+
+.principal h2{
+    color: rgb(88, 84, 84);
+    letter-spacing: 10px;
+    font-size: 30px;
+
+}
+
+.principal h1{
+    letter-spacing: 10px;
+    font-size: 40px;
+    color: white;
+    border-bottom:3px solid white;
+}
+
+.aboutme p, .exp, .compe article{
+    line-height: 2em;
+    background-color: rgb(31, 31, 31);
+    padding: 5px;
+    color: white;
+} 
+
+a:link{
+    text-decoration: none;
+    color: white;
+}
+a:visited{
+    color: white;
+}
+a:hover{
+    background-color: cadetblue;
+}
+
+@media screen and (max-width:753px) {
+    .aside{
+        width: 554px;
+    }
+
+    .main{
+        width: 554px;
+        margin: auto;
+    }
+    #profilepic img{
+        border-radius: 50%;
+        width: 150px;
+        margin: auto;
+    }
+
+    
+dl{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+dt, dd {
+    line-height: 1.5em;
+    border-top: 1px solid rgb(114, 114, 114);
+    flex-basis: 40%;
+    margin: 0;
+}
+
+dt{
+    font-weight: bolder;
+    clear: left;
+    width:auto;
+    float:left; 
+}
+
+dd{
+    clear: right;
+    width: auto;
+    float: left;
+    margin: 0;
+}
+
+dt:last-of-type,
+dd:last-of-type {
+    border-bottom: none;
+}
+}
+
+@media screen and (max-width:554px) {
+    .contenedor1{
+        display: block;
+        margin: auto;
+    }
+    .aside{
+        width: 320px;
+        margin: auto;
+        display: block;
+    }
+
+    .main{
+        width: 320px;
+        margin: auto;
+        display: block;
+    }
+    #profilepic img{
+        border-radius: 50%;
+        width: 150px;
+        margin-top: 5%; 
+        margin-left: 2%; 
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:344px) {
+    .contenedor1{
+        display: block;
+        margin: auto;
+    }
+    
+    .contenedor1 h2{
+        font-size: 15px;
+    }
+
+    .principal h1{
+        font-size: 20px;
+    }
+
+    .principal h2{
+        font-size: 15px;
+    }
+
+    .aside{
+        width: 270px;
+        margin: auto;
+        display: block;
+    }
+
+    .main{
+        width: 270px;
+        margin: auto;
+        display: block;
+    }
+    
+    #profilepic img{
+        border-radius: 50%;
+        width: 150px;
+        margin-top: 5%; 
+        margin-left: 2%; 
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,275 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("img_tai/back.jpg");
+}
+
+.menu {
+    background: rgb(255, 196, 0);
+    min-width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: .75%;
+    font-size: 16pt;
+    border-bottom: 1px solid black;
+}
+
+.contenido{
+    width: 75%;
+    margin: auto;
+    background-color: white;
+}
+
+.menu div {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100px;
+    display: flex;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    transition: 0.2s;
+    padding: 18px 18px;
+    margin: .1%;
+    justify-content: center;
+}
+
+.logo p{
+    color: rgb(255, 196, 0);
+    display: inline-flex;
+    font-size: 30pt;
+    text-align: center;
+    justify-content: center;
+
+}
+
+div {
+    text-align: center;
+}
+
+nav a:hover {
+    background: rgba(255, 157, 0, 0.631);
+    transition: 0.5s;
+}
+
+.noHover{
+    pointer-events: none;
+}
+
+.contenido a:active, .contenido a:visited, .contenido a:link{
+    color: rgb(0, 52, 175);
+}
+
+#hr1 {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgb(0, 0, 0);
+    margin: 10;
+}
+
+.text {
+    margin-left: 0.85%;
+    margin-right: 0, 5%;
+    margin: 1%;
+    text-align: justify;
+    font-size: 12pt;
+}
+
+.textend {
+    margin-left: 0.85%;
+    margin-right: 0, 5%;
+    margin: 1%;
+    text-align: justify;
+    font-size: 15pt;
+    margin-bottom: 1%;
+}
+
+#intro {
+    margin-left: 0.6%;
+}
+
+.table_bg {
+    background-color: rgb(255, 196, 0);
+}
+
+#info {
+    font-size: 90%;
+    margin-left: 0.85%;
+    margin-right: 1%;
+}
+
+ul {
+    margin-left: 12%;
+    padding: 0;
+    margin: 0 0 0 16.5%;
+    list-style: none;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+.registro{
+    box-sizing: border-box;
+    width: 28%;
+    background-color: rgb(26, 25, 25);
+    padding: 2%;
+    margin: auto;
+    margin-top: 5%;
+    color: white;
+    border: 2px solid rgb(255, 196, 0);
+    margin-bottom: 3%;
+    box-shadow: 7px 13px 37px #000;
+    border-radius: 2%;
+    min-width: 280px;
+}
+
+.registro1{
+    box-sizing: border-box;
+    width: 280px;
+    background-color: rgb(26, 25, 25);
+    padding: 1%;
+    margin: auto;
+    margin-top: 5%;
+    color: white;
+    border: 2px solid rgb(255, 196, 0);
+    margin-bottom: 3%;
+    box-shadow: 7px 13px 37px #000;
+    border-radius: 2%;
+}
+
+.registro1 h3{
+    font-size: 18px;
+    margin-bottom: 6%;
+    margin-top: 2%;
+    text-align: center;
+}
+
+.registro1 h4{
+    font-size: 16px;
+    margin-bottom: 6%;
+    margin-top: 2%;
+    text-align: center;
+    
+    color: grey;
+}
+
+.registro h3{
+    font-size: 22px;
+    margin-bottom: 6%;
+    margin-top: 2%;
+}
+
+.registro p{
+    height: 4%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.registro a{
+    color: white;
+    text-decoration: none;
+}
+
+.registro a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.registro .boton{
+    border: none;
+    width: 100%;
+    background-color: white;
+    padding: 3%;
+    margin: 2% 0;
+    font-size: 16px;
+}
+
+.control{
+    width: 100%;
+    background-color: rgb(26, 25, 25);
+    padding: 1%;
+    border-radius: 1%;
+    margin-bottom: 1.6%;
+    border: 1px solid white;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+
+footer {
+    position: bottom;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    background: rgb(255, 196, 0);
+    height: auto;
+    width: 100%;
+    font-family: "Open Sans";
+    padding-top: 5pt;
+    border-top: 1px solid black;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 80%;
+    color: rgb(63, 63, 63);
+    margin-top: .5%;
+    border-top: 0.5px solid rgb(255, 196, 0);
+}
+
+.footer-bottom {
+    width: 150px;
+    padding: .05% 0;
+    text-align: center;
+    margin: auto;
+    text-transform: uppercase;
+    background: black;
+    font-size: 90%;
+    
+}
+
+
+
+footer nav {
+    border: 1.5px solid black;
+    font-weight: bolder;
+}
+
+.footer-bottom a:visited, .footer-bottom a:active, .footer-bottom a:link{
+    color: rgb(255, 196, 0);
+}
+
+
+/* MEDIA */
+
+
+@media screen and (max-width: 700px) {
+    .menu {
+        display:inline-block;
+        background: rgb(255, 196, 0);
+        width: 98%;
+        align-items: center;
+        padding: 1%;
+        font-size: 16pt;
+        border-bottom: 1px solid black;
+        margin: auto;
+    }
+
+    .menu div {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 25%;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        transition: 0.2s;
+        padding: 18px 18px;
+        margin: auto;
+        justify-content: center;
+    }  
+}
